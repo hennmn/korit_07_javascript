@@ -76,14 +76,15 @@ for(let i = 0; i < productList.length; i++) {
 console.log('살 수 있는 목록 : ' + outputList);
 // 결과값 : 살 수 있는 음료 목록 : [object Obeject],[object Obeject],[object Obeject],[object Obeject]
 
-for(let i = 0; i < outputList.length; i++) {
-  console.log(outputList[i]);
-}
+// for(let i = 0; i < outputList.length; i++) {
+//   console.log(outputList[i]);
+// }
 // 근데 list 내부의 객체들을 하나씩 확인하려고 하니까 얘는 또 출력이 됩니다.
 
 // for(const key in outputList) {  
 //   console.log(key);
 //   console.log(outputList[key]);
+    
 // }
 
 for (let index in outputList) {
@@ -125,7 +126,8 @@ let person = {
 
 for(const key in person) {  // 그럼 추출되는 key는 각각 fName, lName / age 일 겁니다.
   console.log(key);
-  console.log(person[key]);
+  console.log(pe
+  person[key]);
 // //   이 시점에서 첫 번째 반복이라고 가정해보겠습니다.
 //   그러면 key = 'fName';이 저장되어있다고 볼 수 있겠네요.
 //  console.log(person.key);
