@@ -7,14 +7,15 @@
 </head>
 <body bgcolor="5f5f5f">
   <select id="select1" onchange="doChange();">
-    <!-- option[value]*3 -->
+    <!-- option[value]*3 + tab 버튼 -->
     <option value="KO">Korea</option>
     <option value="CN">China</option>
     <option value="JP">Japan</option>
   </select>
   <br>
+
   <script>
-    function doChange() {
+    function doChange () {
       let selectedValue = document.getElementById('select1').value;
       // value는 option에 딸려있는 속성에 해당합니다.
       console.log(selectedValue);
